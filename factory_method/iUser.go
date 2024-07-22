@@ -1,7 +1,7 @@
 package main
 
 // Product interface
-type IEmployee interface {
+type IUser interface {
 	getName() string
 	getID() int
 	setName(name string)

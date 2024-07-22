@@ -1,9 +1,12 @@
 package main
 
 func main() {
-	programmer, _ := getEmployee("programmer")
-	accountant, _ := getEmployee("accountant")
+	admin, _ := getUser("admin")
+	customer, _ := getUser("customer")
 
-	programmer.setID(3)
-	accountant.setName("New name")
+	admin.setID(3)
+	customer.setID(4)
+
+	admin.setName("Administrator")
+	customer.setName("New Customer Name")
 }

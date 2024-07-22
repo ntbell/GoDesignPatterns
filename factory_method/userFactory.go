@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func getUser(userType string) (IUser, error) {
+func GetUser(userType string) (IUser, error) {
 	switch userType {
 	case "admin":
 		return newAdmin(), nil

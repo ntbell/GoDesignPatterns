@@ -12,13 +12,13 @@ func main() {
 	adminConfig := adminFactory.makeConfig()
 	adminPermissions := adminFactory.makePermissions()
 
-	fmt.Print(adminConfig.getName())
-	fmt.Print(adminConfig.getID())
-	fmt.Print(adminPermissions.getScope())
-	fmt.Print(adminPermissions.getScope())
+	fmt.Println(adminConfig.getName())
+	fmt.Println(adminConfig.getID())
+	fmt.Println(adminPermissions.getScope())
+	fmt.Println(adminPermissions.getScope())
 
-	fmt.Print(customerConfig.getName())
-	fmt.Print(customerConfig.getID())
-	fmt.Print(customerPermissions.getScope())
-	fmt.Print(customerPermissions.getScope())
+	fmt.Println(customerConfig.getName())
+	fmt.Println(customerConfig.getID())
+	fmt.Println(customerPermissions.getScope())
+	fmt.Println(customerPermissions.getScope())
 }

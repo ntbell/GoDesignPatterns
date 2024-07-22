@@ -21,3 +21,10 @@ func (u *User) setID(id int) {
 func (u *User) getID() int {
 	return u.ID
 }
+
+func newUser() IUser {
+	return &User{
+		ID:   1,
+		Name: "John Doe",
+	}
+}

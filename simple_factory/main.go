@@ -5,11 +5,11 @@ import "fmt"
 func main() {
 	factory := UserFactory{}
 
-	user, err := factory.Create("user")
+	admin, err := factory.Create("admin")
 	if err != nil {
 		fmt.Println("Error:", err)
 	} else {
-		fmt.Println("Created:", user.getName())
+		fmt.Println("Created:", admin.getName())
 	}
 
 	customer, err := factory.Create("customer")
@@ -19,10 +19,10 @@ func main() {
 		fmt.Println("Created:", customer.getName())
 	}
 
-	admin, err := factory.Create("admin")
+	user, err := factory.Create("user")
 	if err != nil {
 		fmt.Println("Error:", err)
 	} else {
-		fmt.Println("Created:", admin.getName())
+		fmt.Println("Created:", user.getName())
 	}
 }

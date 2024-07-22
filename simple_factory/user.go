@@ -1,16 +1,11 @@
 package main
 
-type User interface {
-	getName() string
-	getID() int
-}
+type User struct{}
 
-type UserImpl struct{}
-
-func (u UserImpl) getName() string {
+func (u User) getName() string {
 	return "user"
 }
 
-func (u UserImpl) getID() int {
+func (u User) getID() int {
 	return 0
 }

@@ -1,6 +1,6 @@
 package main
 
-import "errors"
+import "fmt"
 
 type UserFactory struct{}
 
@@ -13,6 +13,6 @@ func (uf UserFactory) Create(userType string) (IUser, error) {
 	case "user":
 		return User{}, nil
 	default:
-		return nil, errors.New("wrong user type passed")
+		return nil, fmt.Errorf("wrong user type passed")
 	}
 }

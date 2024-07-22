@@ -25,11 +25,4 @@ func main() {
 	} else {
 		fmt.Println("Created:", admin.GetType())
 	}
-
-	unknown, err := factory.Create("unknown")
-	if err != nil {
-		fmt.Println("Error:", err)
-	} else {
-		fmt.Println("Created:", unknown.GetType())
-	}
 }

@@ -3,17 +3,22 @@ package main
 import "fmt"
 
 func main() {
-	adidasFactory, _ := GetSportsFactory("adidas")
-	nikeFactory, _ := GetSportsFactory("nike")
+	adminFactory, _ := GetUserFactory("admin")
+	customerFactory, _ := GetUserFactory("customer")
 
-	nikeShoe := nikeFactory.makeShoe()
-	nikeShirt := nikeFactory.makeShirt()
+	customerConfig := customerFactory.makeConfig()
+	customerPermissions := customerFactory.makePermissions()
 
-	adidasShoe := adidasFactory.makeShoe()
-	adidasShirt := adidasFactory.makeShirt()
+	adminConfig := adminFactory.makeConfig()
+	adminPermissions := adminFactory.makePermissions()
 
-	fmt.Print(adidasShoe.getLogo())
-	fmt.Print(adidasShirt.getLogo())
-	fmt.Printf("%d", nikeShoe.getSize())
-	fmt.Printf("%d", nikeShirt.getSize())
+	fmt.Print(adminConfig.getName())
+	fmt.Print(adminConfig.getID())
+	fmt.Print(adminPermissions.getScope())
+	fmt.Print(adminPermissions.getScope())
+
+	fmt.Print(customerConfig.getName())
+	fmt.Print(customerConfig.getID())
+	fmt.Print(customerPermissions.getScope())
+	fmt.Print(customerPermissions.getScope())
 }

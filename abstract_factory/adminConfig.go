@@ -1,6 +1,6 @@
 package main
 
 // Concrete product
-type NikeShirt struct {
-	Shirt
+type AdminConfig struct {
+	Config
 }
